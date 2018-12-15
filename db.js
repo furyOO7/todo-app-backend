@@ -10,6 +10,7 @@ function dbconnect() {
     var db = mysql.createConnection(connection);
     db.connect(function (err) {
         if (err) throw err;
+        console.log(err)
         console.log("Connected!");
     });
 
